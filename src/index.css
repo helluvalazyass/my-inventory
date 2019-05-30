@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+@keyframes modalFade {
+  from { opacity: 0;}
+  to { opacity: 1;}
+}
+
+@keyframes modalComeDown {
+  from {transform: translateY(-50%)}
+  to {transform: translateY(0)}
+}
+
+.modal-dialog-fade-in {
+  animation-name: modalComeDown;
+  animation-duration: .3s;
+}
+
+.modal-dialog-fade-out {
+  animation-name: modalComeDown;
+  animation-duration: .3s;
+  animation-direction: reverse;
+}
+
+
+.modal-fade-in {
+  animation-name: modalFade;
+  animation-duration: .3s;
+}
+
+.modal-fade-out {
+  animation-name: modalFade;
+  animation-duration: .3s;
+  animation-direction: reverse;
+}

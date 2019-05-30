@@ -6,7 +6,6 @@ import MyAccount from './MyAccount'
 import {
   BrowserRouter,
   Route,
-  Link,
 } from 'react-router-dom'
 import './App.css';
 import ItemPlaceholderImage from '../Images/image-placeholder.png'
